@@ -12,7 +12,7 @@
     --border-3: 3px dashed black;
     --white-bg: white;
     --lightgrey-bg: lightgrey;
-    --width: 75%;
+    --width: 85%;
 }
 /* BODY */
 body {
@@ -21,6 +21,10 @@ body {
     font-family: 'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p {
+    font-size: 14.5px;
+    line-height: 1rem;
+}
 /* HEADER */
 header {
     width: var(--width);
@@ -89,7 +93,7 @@ a.login-link {
     text-decoration: none;
 }
 
-/* Title */
+/* Hero-Jumbotron */
 .hero {
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
@@ -147,27 +151,6 @@ a.login-link {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MAIN */
 .section {
     min-height: var(--section-height);
@@ -175,6 +158,7 @@ a.login-link {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 5rem;
 
 }
 
@@ -187,11 +171,11 @@ a.login-link {
 }
 
 .inner-div {
-    width: 65%;
-    min-height: var(--inner-div-height);
+    width: 85%;
+    /* min-height: var(--inner-div-height); */
     margin: 0 auto;
     display: flex;
-    border: var(--border-2);
+    /* border: var(--border-2); */
 }
 
 .bigger {
@@ -199,19 +183,13 @@ a.login-link {
 }
 
 .smaller {
-    width: 40%;
+    width: 35%;
+    padding: 2rem;
 }
 
-.lightblue {
-    background-color: #1e90ff;
-}
-
-.pink {
-    background-color: #ffc0cb;
-}
-
-.border-right {
-    border-right: var(--border-3);
+h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
 }
 
 .bigger-section {
