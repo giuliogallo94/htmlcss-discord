@@ -8,10 +8,9 @@
 :root {
     --section-height: 400px;
     --inner-div-height: 335px;
-    --border-2: 2px dashed black;
-    --border-3: 3px dashed black;
+    --padding-sections: 6rem;
     --white-bg: white;
-    --lightgrey-bg: lightgrey;
+    --lightgrey-bg: #f6f6f6;
     --width: 85%;
 }
 /* BODY */
@@ -22,9 +21,16 @@ body {
 }
 
 p {
-    font-size: 14.5px;
-    line-height: 1rem;
+    font-size: 15.5px;
+    line-height: 1.5rem;
 }
+
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 1.5rem;
+}
+
 /* HEADER */
 header {
     width: var(--width);
@@ -108,10 +114,14 @@ a.login-link {
     text-align: center;
     padding-top: 7rem;
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .messagge {
-    font-size: 16.5px;
+    width: 80%;
+    font-size: 14.8px;
     margin-top: 1rem;
     line-height: 1.5rem;
 }
@@ -147,19 +157,15 @@ a.login-link {
     background-color: #23272a;
 }
 
-
-
-
-
 /* MAIN */
 .section {
     min-height: var(--section-height);
     width: var(--width);
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 5rem;
-
+    padding: var(--padding-sections);
 }
 
 .white-bg {
@@ -172,41 +178,42 @@ a.login-link {
 
 .inner-div {
     width: 85%;
-    /* min-height: var(--inner-div-height); */
     margin: 0 auto;
     display: flex;
-    /* border: var(--border-2); */
+    justify-content: center;
 }
 
-.bigger {
+.img-container {
     width: 60%;
-}
+} 
 
-.smaller {
-    width: 35%;
-    padding: 2rem;
-}
-
-h2 {
-    font-size: 40px;
-    margin-bottom: 1rem;
+.text-container {
+    width: 40%;
+    padding-top: 2rem;
 }
 
 .bigger-section {
     min-height: 700px;
     width: var(--width);
     margin: 0 auto;
+    padding: var(--padding-sections);
     display: flex;
     align-items: center;
 }
 
+.bigger-section p {
+    width: 56%;
+}
 .green-square {
-    width: 65%;
-    min-height: 650px;
+    /* width: 55%; */
     margin: 0 auto;
     display: flex;
-    border: var(--border-2);
-    background-color: forestgreen;
+    flex-direction: column;
+    align-items: center;
+}
+
+.green-square p {
+    text-align: center;
 }
 
 /* FOOTER */
