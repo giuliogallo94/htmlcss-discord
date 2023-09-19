@@ -142,15 +142,15 @@ a.login-link {
 
 .download-btn {
     text-decoration: none;
-    border-radius: 35%;
+    border-radius: 30%;
     padding: 0.6rem 0.8rem;
-    margin-right: 1rem;
     font-size: 14.5px;
 }
 
 .download {
     color: black;
     background-color: white;
+    margin-right: 1rem;
 }
 
 .open-browser {
@@ -167,6 +167,27 @@ a.login-link {
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-sections);
+}
+
+.wave-lightgrey {
+    background-image: url(../img/wave-lightgrey.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+    width: var(--width);
+    background-color: var(--white-bg);
+    margin: 0 auto;
+}
+
+.wave-white {
+    background-image: url(../img/wave-white.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 100px;
+    width: var(--width);
+    background-color: var(--lightgrey-bg);
+    margin: 0 auto;
 }
 
 .white-bg {
@@ -210,10 +231,14 @@ a.login-link {
 }
 
 .call-to-action {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 1.5rem;
 }
 
 .violet {
@@ -258,6 +283,7 @@ footer {
 .language-ita {
     display: flex;
     align-items: center;
+    flex-direction: row;
     color: white;
     margin-bottom: 0.5rem;
     
@@ -265,13 +291,18 @@ footer {
 
 .language-ita p {
     font-size: 10px;
+    margin-right: 0.2rem;
 }
 
-.flag-ita{
+.flag-ita {
     max-width: 10%;
     margin-right: 0.2rem;
-  
 } 
+
+.down-symbol {
+    font-size: 20px;
+    padding-top: 0.4rem;
+}
 
 .social-media {
     font-size: 15px;
@@ -311,7 +342,6 @@ footer {
 .bottom-footer {
     height: 60px;
     display: flex;
-    /* align-items: end; */
 }
 
 .footer-bar {
@@ -335,7 +365,6 @@ footer {
     background-color: var(--discord-violet);
     border-radius: 35%;
     padding: 0.4rem 0.6rem;
-    margin-right: 1rem;
     font-size: 10px;
 }
 
