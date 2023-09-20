@@ -32,6 +32,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+.btn {
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+}
+
 /* HEADER */
 header {
     width: var(--width);
@@ -91,13 +98,9 @@ li {
     justify-content: flex-end;
 }
 
-a.login-link {
-    text-decoration: none;
+.login-btn {
     color: black;
     background-color: white;
-    border-radius: 35%;
-    padding: 0.4rem 0.6rem;
-    text-decoration: none;
 }
 
 /* Hero-Jumbotron */
@@ -140,10 +143,7 @@ a.login-link {
     justify-content: center;
 }
 
-.download-btn {
-    text-decoration: none;
-    border-radius: 30%;
-    padding: 0.6rem 0.8rem;
+.btn-big {
     font-size: 14.5px;
 }
 
@@ -160,7 +160,6 @@ a.login-link {
 
 /* MAIN */
 .section {
-    min-height: var(--section-height);
     width: var(--width);
     margin: 0 auto;
     display: flex;
@@ -215,7 +214,6 @@ a.login-link {
 }
 
 .bigger-section {
-    min-height: 700px;
     width: var(--width);
     margin: 0 auto;
     padding: var(--padding-sections);
@@ -241,7 +239,7 @@ a.login-link {
     padding: 1.5rem;
 }
 
-.violet {
+.violet-btn {
     background-color: var(--discord-violet);
     color: white;
     margin-top: 2rem;
@@ -284,18 +282,23 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: flex-start;
     color: white;
     margin-bottom: 0.5rem;
     
 }
 
-.language-ita p {
+.language-ita  {
     font-size: 10px;
-    margin-right: 0.2rem;
+}
+
+.language-ita span,i {
+    font-size: 10px;
+    margin-right: 2px;
 }
 
 .flag-ita {
-    max-width: 10%;
+    max-width: 6%;
     margin-right: 0.2rem;
 } 
 
@@ -360,11 +363,8 @@ footer {
 }
 
 .register-btn {
-    text-decoration: none;
     color: white;
     background-color: var(--discord-violet);
-    border-radius: 35%;
-    padding: 0.4rem 0.6rem;
     font-size: 10px;
 }
 
