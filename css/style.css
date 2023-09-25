@@ -50,6 +50,7 @@ header {
     height: 60px;
     background-color: #255DE4;
     padding: 0.55rem;
+    z-index: 999;
 }
 
 .navbar {
@@ -168,25 +169,23 @@ li {
     padding: var(--padding-sections);
 }
 
-.wave-lightgrey {
-    background-image: url(../img/wave-lightgrey.svg);
+.wave {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100px;
     width: var(--width);
-    background-color: var(--white-bg);
     margin: 0 auto;
+}
+
+.wave-lightgrey {
+    background-image: url(../img/wave-lightgrey.svg);
+    background-color: var(--white-bg);
+
 }
 
 .wave-white {
     background-image: url(../img/wave-white.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    min-height: 100px;
-    width: var(--width);
     background-color: var(--lightgrey-bg);
-    margin: 0 auto;
 }
 
 .white-bg {
